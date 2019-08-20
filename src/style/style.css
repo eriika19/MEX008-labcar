@@ -1,0 +1,88 @@
+
+body{
+    font-family: 'Roboto', sans-serif;
+  }
+
+  /* Estilos Header (Nav) */
+  
+  
+  header{
+    background-color: white;
+  }
+  
+  .navbar {
+    
+  }
+  
+  .sidebar {
+    grid-area: sidebar;
+  }
+
+  a{
+    text-decoration: none;
+    font-weight: 900;
+    font-size: 1.5em;
+    line-height: 230%;
+    color: black;
+  }
+  
+  ul, li{
+    text-decoration: none;
+    list-style: none;
+    float: right;
+    margin: 0.5em;
+    color: black;
+  }
+  
+/* li:hover{
+  color: rgb(220, 208, 208);
+  cursor: pointer;
+} */
+
+.fa{
+  font-size: 2em !important;
+  line-height: 190% !important;
+  color: white;
+}
+
+/* Estilos secciones */
+
+#hero {
+  background-image: url(../style/img/taxi.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: contents;
+}
+
+.info{
+  padding: 2em;
+ /* word-wrap: break-word; */
+}
+
+
+
+
+
+.header {
+  grid-area: header;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.wrapper {
+        display: grid;
+    grid-gap: 10px;
+        grid-template-columns: 200px 200px 200px;
+        grid-template-areas:
+        "header  header  header"
+        "sidebar content content"
+        "footer  footer  footer";
+        background-color: #fff;
+        color: #444;
+    }
+
+
