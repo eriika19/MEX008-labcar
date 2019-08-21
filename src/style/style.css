@@ -1,88 +1,166 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('../style/iconos/fonts/icomoon.eot?lwlfc0');
+  src: url('../style/iconos/fonts/icomoon.eot?lwlfc0#iefix') format('embedded-opentype'),
+    url('../style/iconos/fonts/icomoon.ttf?lwlfc0') format('truetype'),
+    url('../style/iconos/fonts/icomoon.woff?lwlfc0') format('woff'),
+    url('../style/iconos/fonts/icomoon.svg?lwlfc0#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
 
-body{
-    font-family: 'Roboto', sans-serif;
-  }
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
 
-  /* Estilos Header (Nav) */
-  
-  
-  header{
-    background-color: white;
-  }
-  
-  .navbar {
-    
-  }
-  
-  .sidebar {
-    grid-area: sidebar;
-  }
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
-  a{
-    text-decoration: none;
-    font-weight: 900;
-    font-size: 1.5em;
-    line-height: 230%;
-    color: black;
-  }
-  
-  ul, li{
-    text-decoration: none;
-    list-style: none;
-    float: right;
-    margin: 0.5em;
-    color: black;
-  }
-  
-/* li:hover{
-  color: rgb(220, 208, 208);
+.icon-play3:before {
+  content: "\ea1c";
+}
+
+.icon-facebook:before {
+  content: "\ea90";
+}
+
+.icon-twitter:before {
+  content: "\ea96";
+}
+
+.icon-appleinc:before {
+  content: "\eabe";
+}
+
+.icon-linkedin2:before {
+  content: "\eaca";
+}
+
+/* Estilo html*/
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+.hide {
+  display: none;
+}
+
+/* Estilos Header (Nav) */
+
+
+header {
+  background-color: white;
+}
+
+
+.navbar {
+  display: flow-root;
+}
+
+nav .menumobile-trigger {
+  margin-left: .6rem;
+  margin-top: 1vh;
+}
+
+nav,
+.floating,
+.collapsible {
+  -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+a {
+  text-decoration: none;
+  font-weight: 900;
+  font-size: 1.5em;
+  line-height: 230%;
+  color: black;
+}
+
+
+.link-desktop,
+.link-desktop li {
+  display: inline-block;
+  text-decoration: none;
+  list-style: none;
+  float: right;
+  margin: 0 0.6em;
+  color: black;
+}
+
+li:hover {
+  color: #EBEBEB;
   cursor: pointer;
-} */
+}
 
-.fa{
+/* .fa{
   font-size: 2em !important;
   line-height: 190% !important;
   color: white;
+} */
+
+#mobileCollapse {
+  width: 2rem;
+  height: 2rem;
+  background: #FFF;
+  cursor: pointer;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: bottom;
+}
+
+#mobileCollapse span {
+  width: 85%;
+  height: .15rem;
+  margin: .25rem auto;
+  display: block;
+  background: #888;
+  border-radius: 7px;
 }
 
 /* Estilos secciones */
+
+main section {
+  display: flex;
+  min-height: 100vh;
+  margin: 0;
+  flex-direction: column;
+}
 
 #hero {
   background-image: url(../style/img/taxi.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
-  display: contents;
 }
 
-.info{
-  padding: 2em;
- /* word-wrap: break-word; */
+#info {}
+
+#conductor {
+  background-image: url(../style/img/conduce.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#tarifa {}
+
+.yellow {
+  background-color: #F7B632;
 }
 
 
-
-
-
-.header {
-  grid-area: header;
+footer {
+  background-color: #5E5E5E;
+  color: #FFF;
 }
-
-.footer {
-  grid-area: footer;
-}
-
-.wrapper {
-        display: grid;
-    grid-gap: 10px;
-        grid-template-columns: 200px 200px 200px;
-        grid-template-areas:
-        "header  header  header"
-        "sidebar content content"
-        "footer  footer  footer";
-        background-color: #fff;
-        color: #444;
-    }
-
-

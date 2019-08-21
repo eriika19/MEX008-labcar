@@ -1,29 +1,26 @@
-    
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-.container {
+/* .wrapper {
+  display: flex;
   width: 100%;
-  padding: 20px;
-  max-width: 1300px;
-  min-height: 100vh;
-  transition: all 0.3s;
-}
+  align-items: stretch;
+  perspective: 1500px;
+} */
 
-.content {
-  grid-area: content;
-  position: relative;
+.container {
+  width: 100vw;
+/*   transition: all 0.3s; */
 }
 
 .row{
-  margin: auto;
+  margin: 0;
   width: 100%;
   height: auto;
 }
-
 
 .row:before, .row:after{
   content:"";
@@ -35,7 +32,6 @@
 }
 
 .box {
-  border-radius: 5px;
   padding: 15px;
 }
 
