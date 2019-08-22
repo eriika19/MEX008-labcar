@@ -8,8 +8,9 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <link rel="stylesheet" href="../src/style/grid.css">
     <link rel="stylesheet" href="../src/style/style.css">
+    <link rel="stylesheet" href="../src/style/media.css">
     <script src="main.js"></script>
-    <title>Bienvenidx a Lab&ltar</title>
+    <title>Lab&ltar</title>
 </head>
 
 <body>
@@ -18,12 +19,12 @@
         <header class="">
 
             <nav class="navbar">
-                <div  id="mobileCollapse" class="menumobile-trigger">
+                <div id="mobileCollapse" class="menumobile-trigger">
                     <span></span>
                     <span></span>
                     <span></span>
                 </div>
-                <img src="../src/style/img/logo.png" alt="logo">
+                <img id="logo" src="../src/style/img/logo.png" alt="logo">
 
                 <ul class="link-desktop">
                     <li class="nav-item">
@@ -37,37 +38,47 @@
                     </li>
                 </ul>
 
-                <ul class="link-mobile hide">
-                        <li>
-                            <a class="options">Viaja</a>
-                        </li>
-                        <li>
-                            <a class="options">Conduce</a>
-                        </li>
-                        <li>
-                            <a class="options">Inicia Sesión</a>
-                        </li>
-                    </ul>
+                <ul class="link-mobile">
+                    <li>
+                        <a class="options">Viaja</a>
+                    </li>
+                    <li>
+                        <a class="options">Conduce</a>
+                    </li>
+                    <li>
+                        <a class="options">Inicia Sesión</a>
+                    </li>
+                </ul>
             </nav>
         </header>
 
 
         <main class="">
             <section id="hero">
-                <div class="col-4 box yellow">
+                <div id="hero-box" class="col-m4 col-s10 yellow">
 
                 </div>
             </section>
 
             <section id="info" class="yellow">
-                <figure>
-                    <img src="../src/style/img/celular.png" alt="celular">
-                </figure>
-
+                <div id="cel" class="box">
+                    <h2>La nueva app</h2>
+                    <figure>
+                        <img id="celular" src="../src/style/img/celular.png" alt="celular">
+                    </figure>
+                </div>
+                <h3 class="foot-section">Llega a tu destino aún más rápido</h3>
             </section>
 
             <section id="conductor">
+                    <div class="overlay">
+                        <div id="conductor-text">
+                                <h2>Conduce cuando quieras</h2>
+                            <h3>LabCar es una opción flexible para alcanzar tus metas financieras</h3>
+<a id="conductor-btn" class="modal-trigger" >Conviérte en un conductor</a>
+                        </div>
 
+                    </div>
             </section>
 
             <section id="tarifa" class="yellow">

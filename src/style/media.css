@@ -1,0 +1,20 @@
+@media (min-width:500px) {
+
+    .link-desktop,
+    .link-desktop li {
+        display: inline-flex;
+    }
+
+    #logo{
+        margin-left: 1rem;
+    }
+
+    #mobileCollapse {
+        display: none;
+    }
+
+    #hero {
+        background-position: center;
+        background-size: cover;
+      }
+}
