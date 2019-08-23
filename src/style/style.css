@@ -91,6 +91,12 @@ a {
   color: black;
 }
 
+ nav li a:hover {
+cursor: pointer;
+font-size: 1.1em;
+transition: all .4s;
+} 
+
 .link-desktop,
 .link-desktop li {
   display: none;
@@ -101,33 +107,13 @@ a {
   color: black;
 }
 
-.link-mobile,
-.link-mobile li {
-  position: relative;
+#mobile,
+.link-mobile {
   text-decoration: none;
   list-style: none;
   margin: 0 0.6em;
   color: black;
 }
-
-/* .link-mobile > li{
-  display: block;
-}
-.link-mobile li:hover >ul{
-  display: block;
-}
-
- li:hover {
-  color: #DDD;
-  cursor: pointer;
-  opacity: 1;
-}  */
-
-/* .fa{
-  font-size: 2em !important;
-  line-height: 190% !important;
-  color: white;
-} */
 
 #mobileCollapse {
   width: 2.1rem;
@@ -153,6 +139,47 @@ a {
 #mobileCollapse :first-child {
   margin-top: .5rem;
 }
+
+/* 
+.modal-contenido{
+  background-color:aqua;
+  width:300px;
+  padding: 10px 20px;
+  margin: 20% auto;
+  position: relative;
+}
+.modal{
+  background-color: rgba(0,0,0,.8);
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  opacity:0;
+  pointer-events:none;
+  transition: all 1s;
+}
+#miModal:target{
+  opacity:1;
+  pointer-events:auto;
+}
+*/
+
+#mobile{
+  display: none;
+/*   position:absolute; */
+  transition: all 1s;
+ } 
+
+.link-mobile{
+  position: relative; 
+  display: list-item;
+}
+
+#mobile:target{
+  display: block;
+  pointer-events:auto;
+} 
 
 /* Estilos secciones */
 
@@ -244,6 +271,33 @@ margin-top: 13vh;
 
 .yellow {
   background-color: #F7B632;
+}
+
+/* Modales */
+
+.login-content{
+  background-color:aqua;
+  width:300px;
+  padding: 10px 20px;
+  margin: 20% auto;
+  position: relative;
+}
+
+.modal{
+  background-color: rgba(0,0,0,.8);
+  position:fixed;
+  top:0;
+  right:0;
+  bottom:0;
+  left:0;
+  opacity:0;
+  pointer-events:none;
+  transition: all 1s;
+}
+
+#login:target{
+  opacity:1;
+  pointer-events:auto;
 }
 
 

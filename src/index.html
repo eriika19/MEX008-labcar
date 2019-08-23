@@ -19,12 +19,31 @@
         <header class="">
 
             <nav class="navbar">
-                <div id="mobileCollapse" class="menumobile-trigger">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+                
+                <ul>
+                    <li>
+                        <a id="mobileCollapse" class="menumobile-trigger" href="#mobile">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </a>
+                        
+</li>
+<ul  id="mobile">
+                        <li class="link-mobile">
+                            <a class="options">Viaja</a>
+                        </li>
+                        <li class="link-mobile">
+                            <a class="options">Conduce</a>
+                        </li>
+                        <li class="link-mobile">
+                            <a class="options" href="#login">Inicia Sesión</a>
+                        </li>
+                    </ul>
+                
+<li>
                 <img id="logo" src="../src/style/img/logo.png" alt="logo">
+            </li>
 
                 <ul class="link-desktop">
                     <li class="nav-item">
@@ -34,19 +53,7 @@
                         <a class="nav-link" href="">Conduce</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Inicia Sesión</a>
-                    </li>
-                </ul>
-
-                <ul class="link-mobile">
-                    <li>
-                        <a class="options">Viaja</a>
-                    </li>
-                    <li>
-                        <a class="options">Conduce</a>
-                    </li>
-                    <li>
-                        <a class="options">Inicia Sesión</a>
+                        <a class="modal-target" href="#login">Inicia Sesión</a>
                     </li>
                 </ul>
             </nav>
@@ -80,18 +87,29 @@
 
                     </div>
             </section>
-
+            
             <section id="tarifa" class="yellow">
-
+                
             </section>
-
-
+            
+            <!--Modales-->
+    
+            
         </main>
-
+        
         <footer>
             Footer
         </footer>
-
+        
+        <!--         <a href="#modal-login">Abrir Modal</a> -->
+        <div id="login" class="modal">
+          <div class="login-content">
+            <a href="#">X</a>
+            <h2>Inicia sesión</h2>
+            <p>Este es mi primera ventana modal sin utilizar JavaScript.</p>
+          </div>  
+        </div>
+        
     </div>
 </body>
 
