@@ -31,10 +31,10 @@
                                 <a href="#rate">Viaja</a>
                             </li>
                             <li>
-                                <a>Conduce</a>
+                                <a href="#driver">Conduce</a>
                             </li>
                             <li>
-                                <a class="modal-target" href="#login">Inicia Sesión</a>
+                                <a href="#login">Inicia Sesión</a>
                             </li>
                         </ul>
                     </li>
@@ -50,10 +50,10 @@
                         <a href="#rate">Viaja</a>
                     </li>
                     <li>
-                        <a class="modal-target" href="">Conduce</a>
+                        <a href="#driver">Conduce</a>
                     </li>
                     <li>
-                        <a class="modal-target" href="#login">Inicia Sesión</a>
+                        <a href="#login">Inicia Sesión</a>
                     </li>
                 </ul>
 
@@ -61,10 +61,13 @@
         </header>
 
 
-        <main class="">
+        <main>
             <section id="hero">
                 <div id="hero-box" class="col-m4 col-s10 yellow">
-
+                    <div id="hero-text">
+                        <h2>Comienza a viajar <br>con <img id="logo-hero" src="../src/style/img/logo-blanco.png" alt="logo-blanco"></h2> 
+                        <a id="hero-btn" href="#register" class="btn white">Descarga el app</a>
+                    </div>
                 </div>
             </section>
 
@@ -78,12 +81,12 @@
                 <h3 class="foot-section">Llega a tu destino aún más rápido</h3>
             </section>
 
-            <section id="conductor">
+            <section id="driver">
                 <div class="overlay">
-                    <div id="conductor-text">
+                    <div id="driver-text">
                         <h2>Conduce cuando quieras</h2>
                         <h3>LabCar es una opción flexible para alcanzar tus metas financieras</h3>
-                        <a id="conductor-btn" class="modal-trigger">Conviérte en un conductor</a>
+                        <a id="driver-btn" href="#register" class="btn yellow">Conviérte en un conductor</a>
                     </div>
 
                 </div>
@@ -107,7 +110,7 @@
                 </div>
                 <div id="google-map" class="map">
                     <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.7972222355334!2d-99.16541498526462!3d19.42116548689077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff375cae6ed7%3A0xb4572b930d352c69!2sCOW+Roma!5e0!3m2!1ses!2smx!4v1563566417230!5m2!1ses!2smx"" allowfullscreen></iframe>
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.7972222355334!2d-99.16541498526462!3d19.42116548689077!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff375cae6ed7%3A0xb4572b930d352c69!2sCOW+Roma!5e0!3m2!1ses!2smx!4v1563566417230!5m2!1ses!2smx" allowfullscreen></iframe>
                 </div>
 
             </section>
@@ -166,11 +169,19 @@
 
                 </footer>
                 <!--Modales-->
-                <!--         <a href="#modal-login">Abrir Modal</a> -->
+
                 <div id="login" class="modal">
                     <div class="login-content">
                         <a href="#">X</a>
                         <h2>Inicia sesión</h2>
+                        <p>Llena tus datos.</p>
+                    </div>
+                </div>
+
+                <div id="register" class="modal">
+                    <div class="register-content">
+                        <a href="#">X</a>
+                        <h2>Regístarate</h2>
                         <p>Llena tus datos.</p>
                     </div>
                 </div>

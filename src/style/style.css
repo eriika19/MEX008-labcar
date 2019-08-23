@@ -172,6 +172,26 @@ main section {
   height: 39vh;
   margin-top: 26.5vh;
   color: #FFF;
+  padding: 3rem 2rem;
+}
+
+#hero h2{
+  font-size: 2.2em;
+  margin-bottom: 2rem;
+}
+
+#hero a{
+  font-size: 1.2em;
+  color: #1C1C1C;
+}
+
+#hero .btn{
+padding: .6rem 1rem;
+border-radius: 6px;
+}
+
+#logo-hero {
+  height: 1rem;
 }
 
 #info {
@@ -204,7 +224,7 @@ main section {
   font-weight: 500;
 }
 
-#conductor {
+#driver {
   background-image: url(../style/img/conduce.jpg);
   background-position: center;
   background-repeat: no-repeat;
@@ -219,21 +239,25 @@ main section {
   /*   z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
 }
 
-#conductor-text {
+#driver-text {
   margin-left: 8vw;
   margin-top: 13vh;
 }
 
-#conductor-text h2 {
+#driver-text h2 {
   font-size: 1.25em;
   font-weight: 600;
 }
 
-#conductor-text h3 {
+#driver-text h3 {
   font-size: 1.1em;
   font-weight: 200;
   margin-top: 1 vh;
   margin-bottom: 1vh;
+}
+
+#driver a {
+  color: #FFF;
 }
 
 /*rate*/
@@ -309,7 +333,20 @@ main section {
   transition: all 1s;
 }
 
+.register-content {
+  background-color: aqua;
+  width: 300px;
+  padding: 10px 20px;
+  margin: 20% auto;
+  position: relative;
+}
+
 #login:target {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+#register:target {
   opacity: 1;
   pointer-events: auto;
 }
