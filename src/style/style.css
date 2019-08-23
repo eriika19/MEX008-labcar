@@ -240,25 +240,32 @@ border-radius: 6px;
 }
 
 #driver-text {
-  margin-left: 8vw;
-  margin-top: 13vh;
+  margin-left: 9vw;
+  margin-top: 15vh;
 }
 
 #driver-text h2 {
-  font-size: 1.25em;
+  font-size: 1.3em;
   font-weight: 600;
+  margin-bottom: .3rem;
 }
 
 #driver-text h3 {
   font-size: 1.1em;
   font-weight: 200;
   margin-top: 1 vh;
-  margin-bottom: 1vh;
+  margin-bottom: 3vh;
 }
 
 #driver a {
+  font-size: 1.2em;
   color: #FFF;
 }
+
+#driver .btn{
+  padding: .6rem .9rem;
+  border-radius: 6px;
+  }
 
 /*rate*/
 #rate {
@@ -356,7 +363,7 @@ border-radius: 6px;
 footer {
   width: 100vw;
   padding: 1% 6%;
-  background-color: #5E5E5E;
+  background-color: #2B2B2B;
   color: #FFF;
 }
 
@@ -446,10 +453,11 @@ figure {
 }
 
 .end-footer {
-  text-align: center;
+  text-align: left;
   background: url(../style/iconos/fonts/white-line.svg) repeat-x 100% top;
 }
 
 .end-footer p {
   padding-top: 1rem;
+  font-size: .85em;
 }
